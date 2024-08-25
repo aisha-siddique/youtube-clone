@@ -1,0 +1,106 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 16px;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-icon {
+    font-size: 24px;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+  
+  .youtube-logo {
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .navbar-center {
+    flex: 1; /* Allow the center part to grow */
+    display: flex;
+    justify-content: center; /* Center the search bar */
+    align-items: center;
+  }
+  
+  .search-bar {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 25px; /* Rounded border */
+    overflow: hidden;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 8px 12px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .search-button {
+    padding: 8px 16px;
+    background-color: #f8f8f8;
+    border: none;
+    cursor: pointer;
+    border-left: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #e0e0e0; /* Hover effect for search button */
+  }
+  
+  .microphone-icon {
+    margin-left: 16px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin-left: 16px;
+    cursor: pointer;
+  }
+  
+  .user-icon {
+    font-size: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-center {
+      flex: 1;
+      margin-left: 0;
+      margin-right: 0;
+      justify-content: flex-end;
+    }
+  
+    .navbar-right {
+      justify-content: flex-end;
+    }
+  }
+  

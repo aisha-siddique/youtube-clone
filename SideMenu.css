@@ -1,0 +1,66 @@
+.side-menu {
+  width: 240px;
+  background-color: #fff;
+  padding: 20px 0;
+  border-right: 1px solid #ddd;
+  height: 100vh;
+  position: fixed;
+  top: 60px; /* Offset for the navbar */
+  left: 0;
+  overflow-y: auto; /* Make the sidebar scrollable */
+  box-sizing: border-box;
+  transform: translateX(-100%); /* Initially hidden */
+  transition: transform 0.3s ease;
+}
+
+.side-menu.visible {
+  transform: translateX(0); /* Slide in when visible */
+}
+
+  .menu-sections {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-section {
+    margin-bottom: 20px;
+  }
+  
+  .section-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #606060;
+    padding: 0 20px;
+    margin-bottom: 10px;
+  }
+  
+  .section-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .menu-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .icon {
+    font-size: 24px;
+    margin-right: 16px;
+  }
+  
+  .text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+  }
+  
